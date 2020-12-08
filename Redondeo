@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Redondeo{
+	
+	static void Redondear(int s){
+		int i = s/100 * 100;
+		
+		if(s-50>i){
+			i+=100;
+			System.out.println(i);
+		}
+		else System.out.println(i);
+	}
+
+	public static void main(String[] args){
+		System.out.println("Numero: ");
+		Scanner x = new Scanner(System.in);
+		int s = x.nextInt();
+		Redondear(s);
+		
+	}
+
+}
+		
