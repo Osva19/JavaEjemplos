@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Rectangulo{
+	public static void main(String[] args){
+		System.out.println("Base: ");
+		Scanner lee = new Scanner(System.in);
+		int b = lee.nextInt();
+		System.out.println("Altura: ");
+		int h = lee.nextInt();
+		System.out.println("Caracter: ");
+		char c = lee.next().charAt(0);
+		System.out.println("");
+		int i,j;
+		for(i=0;i<h;i++){
+			for(j=0;j<b;j++){
+				System.out.print(c);
+			}
+			System.out.println("");
+		}
+		
+	} 
+}
