@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class EjemploWhile{
+	public static void main(String[] args){
+		System.out.println("Primer numero(<50): ");
+		Scanner lee = new Scanner(System.in);
+		int n = lee.nextInt();
+		System.out.println("Segundo numero (<50): ");
+		int m = lee.nextInt();
+		System.out.println("");
+		System.out.print(n+" ");
+		System.out.print(m+" ");
+		if(n>m){
+			while(n>m){
+				n-=2;
+				m+=5;
+				System.out.print(n+" ");
+				System.out.print(m+" ");
+			}
+		}
+		if(m>n){
+			while(m>n){
+				n+=5;
+				m-=2;
+				System.out.print(n+" ");
+				System.out.print(m+" ");
+			}
+		}
+		if(n==m){
+			System.out.println("El numero uno es igual al numero dos");
+		}
+	} 
+}
